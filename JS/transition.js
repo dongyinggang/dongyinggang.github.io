@@ -218,8 +218,8 @@ var audioConfig = {
 ///背景音乐///
 function Html5Audio(url, isloop) {
 	var audio = new Audio(url);
-	// audio.autoplay = true;
-	audio.controls = true;
+	audio.autoplay = true;
+	// audio.controls = true;
 	audio.loop = isloop || false;
 	audio.play();
 	return {
