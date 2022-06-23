@@ -221,6 +221,7 @@ function Html5Audio(url, isloop) {
 	audio.autoplay = true;
 	// audio.controls = true;
 	audio.loop = isloop || false;
+	audio.load();
 	audio.play();
 	return {
 		end: function (callback) {
